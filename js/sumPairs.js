@@ -8,7 +8,7 @@ exports.sumPairs = function(integerArrays, desiredSum) {
         }}
     
     if (output.length != 0) {
-        return JSON.stringify(output)} 
+        return output} 
     
         
     return 'unable to find pair'
