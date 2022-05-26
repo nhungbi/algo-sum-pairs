@@ -5,9 +5,11 @@ def sum_pairs(list_integers, desired_sum):
     If no pairs satisfied the desired sum, return 'unable to find pairs'.
     """
     output = []
-    for i in range(len(list_integers)):
+    for i in range(1,len(list_integers)):
         for elt in list_integers[i:]: #paired with all elts after each elt, this get all the possible pairs
             if list_integers[i] + elt == desired_sum:
                 output.append([list_integers[i],elt])
 
     return output if output else 'unable to find pair' #empty list has a bool of False
+
+# print(sum_pairs([1,1,3],2))

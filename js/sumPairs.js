@@ -1,6 +1,6 @@
 exports.sumPairs = function(integerArrays, desiredSum) {
     let output = []
-    for (let i=0; i < integerArrays.length; i++) { 
+    for (let i=1; i < integerArrays.length; i++) { 
         for (let int of integerArrays.slice(i)) { //find all possible pairings
             if (integerArrays[i] + int === desiredSum) {
                 output.push([integerArrays[i], int])

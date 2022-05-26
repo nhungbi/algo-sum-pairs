@@ -1,6 +1,6 @@
 var sp = require("./sumPairs");
-var shallowEqualArrays = require('shallow-equal/arrays');
-
+//var shallowEqualArrays = require('shallow-equal/arrays');
+//can use JSON.stringify() to compare instead
 
 // Don't forget to add your tests :)
 console.log(sp.sumPairs([1,2,3,4,5],9) == JSON.stringify([[4,5]]));
